@@ -24,8 +24,8 @@
 #include <sys/time.h>
 #include <sys/times.h>
 
-#define QUEUESIZE 700
-#define LOOP 350
+#define QUEUESIZE 1000
+#define LOOP 700
 #define   P 1 //Producer's threads//
 #define   Q 1 //Consumer's threads//
 
