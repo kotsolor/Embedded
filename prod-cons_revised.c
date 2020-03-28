@@ -242,7 +242,7 @@ void queueDel (queue *q, workFunction *out)
 
 void* random_fun_1(void* arg){
   pthread_mutex_lock(&lock);
-  printf("Hello this is random random_fun_1\n");
+  printf("Hello this is random_fun_1\n");
   pthread_mutex_unlock(&lock);
   return (NULL);
 }
@@ -250,7 +250,7 @@ void* random_fun_1(void* arg){
 void* random_fun_2(void* arg){
   pthread_mutex_lock(&lock);
   int i;
-  printf("The sine of 10 random corners is:");
+  printf("The sine of 10 random angles is:");
   for(i=0 ; i<10 ; i++){
     printf("%.2f ", sin(rand()%1000));
   }
@@ -262,7 +262,7 @@ void* random_fun_2(void* arg){
 void* random_fun_3(void* arg){
   pthread_mutex_lock(&lock);
   int i;
-  printf("The cosine of 10 random corners is:");
+  printf("The cosine of 10 random angels is:");
   for(i=0 ; i<10 ; i++){
     printf("%.2f ", cos(rand()%1000));
   }
@@ -274,7 +274,7 @@ void* random_fun_3(void* arg){
 void* random_fun_4(void* arg){
   pthread_mutex_lock(&lock);
   int i;
-  printf("The tangent of 10 random corners is:");
+  printf("The tangent of 10 random angels is:");
   for(i=0 ; i<10 ; i++){
     printf("%.2f ", tan(rand()%1000));;
   }
