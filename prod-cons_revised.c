@@ -26,8 +26,8 @@
 
 #define QUEUESIZE 700
 #define LOOP 350
-#define   P 5 //Producer's threads//
-#define   Q 3 //Consumer's threads//
+#define   P 1 //Producer's threads//
+#define   Q 1 //Consumer's threads//
 
 //Functions for the fifo
 void *random_fun_1(void* x);
