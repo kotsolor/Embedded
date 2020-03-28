@@ -125,8 +125,7 @@ void *producer (void *q)
     }
 
     workFunction funcs; //Element that we 'll put on fifo
-
-    void * ptr;
+ 
     int j=rand()%4;
     ptr = &j;
 
